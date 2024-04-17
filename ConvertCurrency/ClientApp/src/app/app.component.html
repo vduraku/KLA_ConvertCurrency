@@ -1,0 +1,13 @@
+
+<body>
+  <app-nav-menu></app-nav-menu>
+  <form>
+    <div class="container">
+      Write a number to convert
+      <input type="text" title="Add number" class="col-sm-4" id="amount" [(ngModel)]="amount" [ngModelOptions]="{standalone: true}" />
+      <button class="btn btn-primary" type="submit" (click)="convertToWords()">Convert</button>
+      <p aria-live="polite" title="In words">Converted into words: <strong>{{ convertedAmount }}</strong></p>
+    </div>
+  </form>
+</body>
+
